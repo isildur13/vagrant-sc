@@ -36,6 +36,3 @@ cd /bin
 ln -s /usr/local/go/bin/go go
 
 go
-
-
-
