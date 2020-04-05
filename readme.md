@@ -1,6 +1,6 @@
-# This repo consists of some handy Vagrant scripts
+# This branch consists of my Jenkins master server box.
 
+## Contents 
 
-
-## Branches and the project associated with them..
-	1) butters : The Butters project  
+	* jenkins-provision.sh 
+	* Vagrantfile
