@@ -7,7 +7,6 @@ Vagrant.configure("2") do |dev|
 
 end
 
-
 Vagrant.configure("2") do |stage|
 
  stage.vm.box = "ubuntu/bionic64"
