@@ -1,0 +1,10 @@
+Vagrant.configure("2") do |config|
+
+ config.vm.box = "ubuntu/bionic64"
+ config.vm.define "stage-butters"
+ config.vm.hostname = "stage-butters"
+ config.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.13"
+
+
+
+end
