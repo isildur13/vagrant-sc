@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
 
-connfig.vm.define "jenkins" do |jenkins|
+config.vm.define "jenkins" do |jenkins|
 
 	jenkins.vm.box = "ubuntu/bionic64"
 	jenkins.vm.define  "Jenkins-Master"
