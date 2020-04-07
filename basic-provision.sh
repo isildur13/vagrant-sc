@@ -10,12 +10,6 @@ systemctl restart sshd ssh
 apt-get update
 apt install python -y
 
-wget https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.14.1.linux-amd64.tar.gz
-
-cd /bin 
-ln -s /usr/local/go/bin/go go
-
 apt install openjdk-8-jre-headless -y
 apt install openjdk-8-jdk -y
 
@@ -39,4 +33,3 @@ touch /etc/jenkinsagent/jenkinsagent.sh
 chmod 777 /etc/jenkinsagent/jenkinsagent.sh
 systemctl enable jenkinsagent
 systemctl restart jenkinsagent
-
