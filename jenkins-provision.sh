@@ -21,4 +21,6 @@ sleep 2m
 cat /var/lib/jenkins/secrets/initialAdminPassword
 apt install python -y
 apt install ansible -y
+timedatectl set-ntp true
+systemctl status systemd-timesyncd
 
