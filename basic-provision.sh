@@ -14,3 +14,7 @@ apt install python -y
 apt install openjdk-8-jre-headless -y
 apt install openjdk-8-jdk -y
 
+cd /root/
+wget https://raw.githubusercontent.com/panchalyash13/bash-sc/go-install/go-install.sh
+chmod 777 go-install.sh
+./go-install.sh 1.14.1 linux amd64
