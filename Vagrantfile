@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
 config.vm.define "dev" do |dev|
  dev.vm.box = "ubuntu/bionic64"
  dev.vm.hostname = "dev-butters"
+ dev.disksize.size = '5GB'
  dev.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.11"
  dev.vm.provision "shell", path: "basic-provision.sh"
 end
@@ -10,6 +11,7 @@ end
 config.vm.define "test" do |test|
  test.vm.box = "ubuntu/bionic64"
  test.vm.hostname = "test-butters"
+ test.disksize.size = '5GB'
  test.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.12"
  test.vm.provision "shell", path: "basic-provision.sh"
 end
