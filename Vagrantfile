@@ -1,31 +1,31 @@
 Vagrant.configure("2") do |config|
 
-config.vm.define "dev-butters" do |dev-butters|
- dev-butters.vm.box = "ubuntu/bionic64"
- dev-butters.vm.hostname = "dev-butters"
- dev-butters.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.11"
- dev-butters.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "devbutters" do |devbutters|
+ devbutters.vm.box = "ubuntu/bionic64"
+ devbutters.vm.hostname = "devbutters"
+ devbutters.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.11"
+ devbutters.vm.provision "shell", path: "basic-provision.sh"
 end
 
-config.vm.define "test" do |test|
- test.vm.box = "ubuntu/bionic64"
- test.vm.hostname = "test-butters"
- test.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.12"
- test.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "testbutters" do |testbutters|
+ testbutters.vm.box = "ubuntu/bionic64"
+ testbutters.vm.hostname = "testbutters"
+ testbutters.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.12"
+ testbutters.vm.provision "shell", path: "basic-provision.sh"
 end
 
-config.vm.define "stage-butters" do |stage-butters|
- stage-butters.vm.box = "ubuntu/bionic64"
- stage-butters.vm.hostname = "stage-butters"
- stage-butters.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.13"
- stage-butters.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "stagebutters" do |stagebutters|
+ stagebutters.vm.box = "ubuntu/bionic64"
+ stagebutters.vm.hostname = "stagebutters"
+ stagebutters.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.13"
+ stagebutters.vm.provision "shell", path: "basic-provision.sh"
 end
 
-config.vm.define "prod-butters" do |prod-butters|
- prod-butters.vm.box = "ubuntu/bionic64"
- prod-butters.vm.hostname = "prod-butters"
- prod-butters.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.14"
- prod-butters.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "prodbutters" do |prodbutters|
+ prodbutters.vm.box = "ubuntu/bionic64"
+ prodbutters.vm.hostname = "prodbutters"
+ prodbutters.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.14"
+ prodbutters.vm.provision "shell", path: "basic-provision.sh"
 end
 
 
