@@ -1,31 +1,31 @@
 Vagrant.configure("2") do |config|
 
-config.vm.define "dev-goboi" do |dev-goboi|
- dev-goboi.vm.box = "ubuntu/bionic64"
- dev-goboi.vm.hostname = "dev-goboi"
- dev-goboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.11"
- dev-goboi.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "devgoboi" do |devgoboi|
+ devgoboi.vm.box = "ubuntu/bionic64"
+ devgoboi.vm.hostname = "devgoboi"
+ devgoboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.11"
+ devgoboi.vm.provision "shell", path: "basic-provision.sh"
 end
 
-config.vm.define "test-goboi" do |test-goboi|
- test-goboi.vm.box = "ubuntu/bionic64"
- test-goboi.vm.hostname = "test-goboi"
- test-goboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.12"
- test-goboi.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "testgoboi" do |testgoboi|
+ testgoboi.vm.box = "ubuntu/bionic64"
+ testgoboi.vm.hostname = "testgoboi"
+ testgoboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.12"
+ testgoboi.vm.provision "shell", path: "basic-provision.sh"
 end
 
-config.vm.define "stage-goboi" do |stage-goboi|
- stage-goboi.vm.box = "ubuntu/bionic64"
- stage-goboi.vm.hostname = "stage-goboi"
- stage-goboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.13"
- stage-goboi.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "stagegoboi" do |stagegoboi|
+ stagegoboi.vm.box = "ubuntu/bionic64"
+ stagegoboi.vm.hostname = "stagegoboi"
+ stagegoboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.13"
+ stagegoboi.vm.provision "shell", path: "basic-provision.sh"
 end
 
-config.vm.define "prod-goboi" do |prod-goboi|
- prod-goboi.vm.box = "ubuntu/bionic64"
- prod-goboi.vm.hostname = "prod-goboi"
- prod-goboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.14"
- prod-goboi.vm.provision "shell", path: "basic-provision.sh"
+config.vm.define "prodgoboi" do |prodgoboi|
+ prodgoboi.vm.box = "ubuntu/bionic64"
+ prodgoboi.vm.hostname = "prodgoboi"
+ prodgoboi.vm.network "public_network", bridge: "wlp7s0" , ip: "192.168.1.14"
+ prodgoboi.vm.provision "shell", path: "basic-provision.sh"
 end
 
 
